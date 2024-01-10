@@ -1,104 +1,686 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>Raffle</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C600%2C700"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700"/>
-  <link rel="stylesheet" href="./styles/raffle.css"/>
-</head>
-<body>
-<div class="raffle-o1N">
-  <div class="group-34-wmn">
-    <img class="image-32-1-EeQ" src="./assets/image-32-1.png"/>
-    <div class="group-11-Yf6">
-      <img class="group-11-gFW" src="./assets/group-11.png"/>
-      <img class="group-8-Ne8" src="./assets/group-8.png"/>
-      <img class="group-9-6KE" src="./assets/group-9.png"/>
-    </div>
-  </div>
-  <div class="auto-group-ehv4-D8x">
-    <div class="group-36-5S4">
-      <div class="group-33-adi">
-        <p class="you-have-earned-a-raffle-entry-to-name-of-campaign-LMz">
-          <span class="you-have-earned-a-raffle-entry-to-name-of-campaign-LMz-sub-0">
-          You have earned a raffle entry to (NAME OF
-          <br/>
-          CAMPAIGN)
-          </span>
-          <span class="you-have-earned-a-raffle-entry-to-name-of-campaign-LMz-sub-1">!</span>
-        </p>
-        <div class="group-32-e9i">
-          <p class="p01-yhn">
-            <span class="p01-yhn-sub-0">Hi&nbsp;</span>
-            <span class="p01-yhn-sub-1">Ricquela</span>
-            <span class="p01-yhn-sub-2">,</span>
-          </p>
-          <p class="p01-umn">Thank you for participating in (NAME OF CAMPAIGN). You have earned a raffle entry that gives you a chance to win (PRIZE) from Aftermarket and Real or Fake Official.</p>
-          <p class="p01-SWp">Keep on completing tasks to earn more raffle entries!</p>
-          <p class="p01-n4t">View your progress when you visit the Xclusives tab in your Xure account.</p>
-        </div>
-        <p class="p01-hxY">
-        Best,
-        <br/>
-        Xure team
-        </p>
-      </div>
-    </div>
-    <div class="group-35-q3A">
-      <div class="pexels-photo-by-kaboompics-com-eFW">
-        <div class="pexels-photo-by-kaboompics-com-eFW-bg">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="group-30-tvY">
-    <div class="group-29-RvU">
-      <div class="group-7-ZWt">
-        <p class="company-name-vcL">Xure</p>
-        <p class="p03-dWk">
-        Mechanics:
-        <br/>
-        
-        <br/>
-        <ol>
-          <li>
-            Winners will be selected through an electronic raffle.
-          </li>
-          <li>
-            Winners will be notified on [DATE] via email that is registered on their Xure Account.
-          </li>
-          <li>
-            Winners can claim their prizes at the Aftermarket branch in Greenhills, San Juan.
-          </li>
-          <li>
-            Participants are encouraged to read and understand the complete terms and conditions of the "         " available at [link to full terms and conditions].
-          </li>
-          <li>
-            Failure to meet one of these qualifications will not be eligible to be part of the raffle.
-          </li>
-        </ol>
-        <br/>
-        
-        <br/>
-        You may review the service agreement form and terms and conditions in the app for more.
-        </p>
-      </div>
-      <p class="p03-MxY">
-        <span class="p03-MxY-sub-0">If you have any questions or concerns, we&#39;re here to help. Contact us at </span>
-        <span class="p03-MxY-sub-1">support@xuredeal.com</span>
-        <span class="p03-MxY-sub-2">.</span>
-      </p>
-      <div class="group-28-npt">
-        <p class="legal-name-Y3N">XURE DEAL PTE. LTD.</p>
-        <p class="address-4XW">39/F Marina Bay Financial Center Tower 2</p>
-        <p class="city-state-zip-code-nTW">Marina Blvd., Singapore 018983</p>
-        <p class="copyright-h4g">©2023 All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+    <!DOCTYPE html>
+    <html>
+        <title> You have earned a raffle entry to (NAME OF CAMPAIGN)! </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C600%2C700"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700"/>
+        <head>
+            <style>
+                /* body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Inter, sans-serif;
+                } */
+                p {
+                    text-align: justify;
+                }
+                hr {
+                    color: #444444;
+                    opacity: .25;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
+                .card {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #000000;
+                    
+                    .header {
+                        height: 11rem;
+                        background-color: #000000;
+                        flex-shrink: 0;
+                        box-sizing: border-box;
+                        /* padding: 3.633rem 4.8rem 4.44rem 4.8rem; */
+                        width: 100%;
+                        padding: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; /* Adjusted alignment */
+
+                }}
+
+                .image-xure {
+                    width: 10rem;
+                    height: 2.8rem;
+                    object-fit: cover; /* Adjusted object-fit */
+                    vertical-align: top;
+                    flex-shrink: 0;
+                }
+
+                .container-social-media {
+                    margin-top: 0.1rem;
+                    margin-left: 25.5rem;
+                    display: flex;
+                    align-items: center;
+                    flex-shrink: 0;
+
+                    .icon {
+                        width: 35px; /* Adjusted icon size */
+                        height: 35px; /* Adjusted icon size */
+                        padding: 6px;
+                    }
+                }
+                .body {
+                    display: flex;
+                    flex-direction: column;
+                    flex-shrink: 0;
+                    width: 100%;
+                    align-items: center;
+                    font-family: Inter, 'Source Sans Pro';
+                    
+                    .image-container {
+                    flex-shrink: 0;
+                    width: 50rem;
+                    height: 19rem;
+                    align-items: center;
+
+                    .responsive-image {
+                        width: 50rem;
+                        height: 19rem;
+                        position: relative;
+                    }
+                    }
+                }
+                .card-promo-paragraph{
+                    flex-shrink: 0;
+                    box-sizing: border-box;
+                    padding: 3.9rem 3.5rem 2.6rem 3.2rem;
+                    width: 50rem;
+                    height: auto;
+                    background-color: #202226;
+                }
+                .card-paragraph{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .content-title{
+                        margin-top: 0;
+                        letter-spacing: -0.17rem;
+                        font-family: Inter, 'Source Sans Pro';
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        line-height: 1.3333333333;
+                        color: #ffffff;
+                        flex-shrink: 0;
+                        /* margin-bottom: 3.4rem; */
+                        /* max-width: 45.3rem; */
+                    }
+                    .content-title-exclamation {
+                        font-family: Inter, 'Source Sans Pro';
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        line-height: 1.3333333333;
+                        letter-spacing: -0.12rem;
+                        color: #ffffff;
+                    }
+
+                    .content-paragraph{
+                        /* margin-bottom: 3.7rem; */
+                        width: 100%;
+                        row-gap: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        flex-shrink: 0;
+
+                        .greeting{
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            display: flex;
+                            flex-shrink: 0;
+                            font-size: 1.6rem;
+                            color: #ffffff;
+                            letter-spacing: -0.032rem;
+                            align-items: baseline;
+                            font-weight: 400;
+                            line-height: 1.5;
+                            margin-top: 0;
+                            margin-bottom: 0;
+
+                            .greeting-bold-name{
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                                /* line-height: 700; */
+                                letter-spacing: -0.032rem;
+                                color: #ffffff;
+                                font-family: Inter, 'Source Sans Pro';
+                            }
+                        }
+                        .first-sentence{
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            max-width: 47.7rem;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            letter-spacing: -0.032rem;
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
+                            flex-shrink: 0;
+                        }
+                        .second-sentence{
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            letter-spacing: -0.032rem;
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                        }
+                        .third-sentence{
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            font-family: Inter, 'Source Sans Pro';
+                            flex-shrink: 0;
+                            max-width: 47.6rem;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            letter-spacing: -0.032rem;
+                            color: #ffffff;
+                        }
+                    }
+                    .closing{
+                        margin-bottom: 0;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        flex-shrink: 0;
+                        max-width: 7.6rem;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 1.5;
+                        letter-spacing: -0.032rem;
+                    }
+                }
+                .footer {
+                margin-right: 0.7063rem;
+                width: 50rem;
+                flex-shrink: 0;
+                align-items: center;
+
+                .company-name {
+                    margin-top: 1.1rem;
+                    margin-bottom: 1.1rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    letter-spacing: -0.04rem;
+                    color: #ceae7b;
+                    font-family: Inter, 'Source Sans Pro';
+                    white-space: nowrap;
+                }
+                .mechanics {
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 1.6rem;
+                    margin-bottom: 1.6rem;
+
+                    .auto-group {
+                    flex-shrink: 0;
+                    box-sizing: border-box;
+                    padding-bottom: 0.1rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .mechanics-title {
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        margin-bottom: 1.4rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                    }
+                    .mech1 {
+                        margin: 0rem 10.913rem 0.2rem 0rem;
+                        width: calc(100% - 10.9129rem);
+                        display: flex;
+                        align-items: center;
+                        flex-shrink: 0;
+
+                        .one {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        margin-right: 1.7808rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        }
+                        .m1 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        }
+                    }
+                    .mech2 {
+                        margin: 0rem 2.094rem 0.2rem 0rem;
+                        /* width: calc(100% - 2.0935rem); */
+                        width: calc(100% - 10.9129rem);
+                        display: flex;
+                        align-items: flex-start;
+                        flex-shrink: 0;
+
+                        .two {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        flex-shrink: 0;
+                        margin-right: 1.8002rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        }
+                        .m2 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        }
+                    }
+                    .mech3 {
+                        width: calc(100% - 5.8935rem);
+                        display: flex;
+                        align-items: flex-start;
+                        flex-shrink: 0;
+                        margin: 0rem 5.894rem 0.2rem 0rem;
+
+                        .three {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        margin-right: 1.8002rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        }
+                        .m3 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        flex-shrink: 0;
+                        max-width: 44.5rem;
+                        }
+                    }
+                    .mech4 {
+                        flex-shrink: 0;
+                        margin-right: 0.3935rem;
+                        width: calc(100% - 0.3935rem);
+                        display: flex;
+                        align-items: flex-start;
+
+                        .four {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-right: 1.8002rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        }
+                        .m4 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-bottom: 0;
+                        margin-bottom: 0;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        flex-shrink: 0;
+                        max-width: 50rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        }
+                    }
+                    }
+                    .mech5 {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-shrink: 0;
+
+                    .five {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        margin-right: 1.7937rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                    }
+                    .m5 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: Inter, 'Source Sans Pro';
+                        flex-shrink: 0;
+                        max-width: 50.5rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.2125;
+                        color: #ffffff;
+                    }
+                    }
+                }
+                .contact-Rnk {
+                    line-height: 1.5;
+                    letter-spacing: -0.032rem;
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                    max-width: 51.9rem;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+
+                    .contact-Rnk-sub-0 {
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: -0.032rem;
+                    }
+                    .contact-Rnk-sub-1 {
+                    color: #ceae7b;
+                    font-family: Inter, 'Source Sans Pro';
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: -0.032rem;
+                    text-decoration-line: underline;
+                    }
+                    .contact-Rnk-sub-2 {
+                    letter-spacing: -0.032rem;
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    }
+                }
+                .auto-group-complete-address {
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    padding-top: 1.2rem;
+                    width: 100%;
+
+                    .complete-address {
+                    margin-bottom: 2rem;
+                    row-gap: 0.4rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex-shrink: 0;
+
+                    .legal-name {
+                        margin-bottom: 0;
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 1.4285714286;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                    }
+                    .address {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        flex-shrink: 0;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 1.4285714286;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                    }
+                    .city-state-zip-code {
+                        margin-top: 0;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 1.4285714286;
+                        color: #ffffff;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                    }
+                    }
+                    .copyright {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.4285714286;
+                    }
+                }
+                }
+                .txt{
+                    text-align: center;
+                    margin-top: -10px;
+                }
+                .title {
+                    background-color: #4a1564;
+                    color: #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center; 
+                    padding: 1%;
+                    margin-top: 5%;
+                }
+                .info {
+                    border: 0.5px solid #4a1564;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    color:#AB8000;
+                }
+                .link{
+                    color: #AB8000;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+                .contxt{
+                    text-align: left;
+                    margin-top: 20px;
+                    font-size: small;
+                }
+                .last-footer {
+                    background-color: #f5f5f5;
+                    padding: 15px ;
+                }
+                .ftr{
+                    text-align: center;
+                    color: #888888;
+                    font-size: 12px;
+                    font-style: italic;
+                }
+                .info-container{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 5px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                }
+                .badge{
+                    width: 120px;
+                    height: auto;
+                }
+                .badge-wrapper {
+                    margin: 15px 10px;
+                }
+                .msg{
+                    text-align: left;
+                    font-size: small;
+                    /* color:#444444; */
+                    color:#888888;
+                    margin-top: 6px;
+                }
+                h3 {
+                    font-size: 22px;
+                }
+                a{
+                    text-decoration: none;
+                }
+                /* .p{
+                    text-align: left;
+                    font-size: small;
+                    color:#f5f5f5;
+                    margin-top: 40px;
+                } */
+                
+                @media screen and (max-width: 600px) {
+                    .card {
+                        width: 100%;
+                    }
+                    /* .img img {
+                        max-width: 100%;
+                    } */
+                    .bg{
+                    max-width: 100%;
+                    max-height: 500px; 
+                    width: auto;
+                    height: auto;
+                    }
+                    .group-social-media{
+                        margin-left: 1rem;
+                    }
+                    .icon{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="card">
+                <div class="header">
+                    <img class="image-xure" src="./assets/xure-logo.png"/>
+                    <div class="container-social-media">
+                        <img class="icon" src="./assets/x.png"/>
+                        <img class="icon" src="./assets/yt.png"/>
+                        <img class="icon" src="./assets/tiktok.png"/>
+                        <img class="icon" src="./assets/fb.png"/>
+                        <img class="icon" src="./assets/ig.png"/>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="image-container">
+                        <img class="responsive-image" src="./assets/pexels-photo-by-kaboompics-com-bg.png"/>
+                    </div>
+                    <div class="card-promo-paragraph">
+                      <div class="card-paragraph">
+                        <p class="content-title">
+                          <span>
+                          You have earned a raffle entry to (NAME OF
+                          <br/>
+                          CAMPAIGN)
+                          </span>
+                          <span class="content-title-exclamation">!</span>
+                        </p>
+                        <div class="content-paragraph">
+                          <p class="greeting">
+                            <span >Hi&nbsp;</span>
+                            <span class="greeting-bold-name">Ricquela</span>
+                            <span >,</span>
+                          </p>
+                          <p class="first-sentence">Thank you for participating in (NAME OF CAMPAIGN). You have earned a raffle entry that gives you a chance to win (PRIZE) from Aftermarket and Real or Fake Official.</p>
+                          <p class="second-sentence">Keep on completing tasks to earn more raffle entries!</p>
+                          <p class="third-sentence">View your progress when you visit the Xclusives tab in your Xure account.</p>
+                        </div>
+                        <p class="closing">
+                        Best,
+                        <br/>
+                        Xure team
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="footer">
+                  <p class="company-name">Xure</p>
+                  <div class="mechanics">
+                    <div class="auto-group">
+                      <p class="mechanics-title">Mechanics:</p>
+                      <div class="mech1">
+                        <p class="one">1.</p>
+                        <p class="m1">Winners will be selected through an electronic raffle.</p>
+                      </div>
+                      <div class="mech2">
+                        <p class="two">2.</p>
+                        <p class="m2">Winners will be notified on [DATE] via email that is registered on their Xure Account.</p>
+                      </div>
+                      <div class="mech3">
+                        <p class="three">3.</p>
+                        <p class="m3">Winners can claim their prizes at the Aftermarket branch in Greenhills, San Juan.</p>
+                      </div>
+                      <div class="mech4">
+                        <p class="four">4.</p>
+                        <p class="m4">Participants are encouraged to read and understand the complete terms and conditions of the &#34;         &#34; available at [link to full terms and conditions].</p>
+                      </div>
+                      <div class="mech5">
+                        <p class="five">5.</p>
+                        <p class="m5">Failure to meet one of these qualifications will not be eligible to be part of the raffle.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="contact-Rnk">
+                    <span class="contact-Rnk-sub-0">If you have any questions or concerns, we&#39;re here to help. Contact us at </span>
+                    <span class="contact-Rnk-sub-1">support@xuredeal.com</span>
+                    <span class="contact-Rnk-sub-2">.</span>
+                  </p>
+                  <div class="auto-group-complete-address">
+                    <div class="complete-address">
+                      <p class="legal-name">XURE DEAL PTE. LTD.</p>
+                      <p class="address">39/F Marina Bay Financial Center Tower 2</p>
+                      <p class="city-state-zip-code">Marina Blvd., Singapore 018983</p>
+                    </div>
+                    <p class="copyright">©2023 All rights reserved.</p>
+                  </div>
+                </div>
+                <div class="last-footer">
+                    <div class="ftr"> This is a post-only mailing. Please do not reply to this email. </div>
+                </div>
+            </div>
+        </body>
+    </html>
