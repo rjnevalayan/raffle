@@ -5,19 +5,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700"/>
         <head>
             <style>
-                /* body {
-                    margin: 0;
-                    padding: 0;
-                    font-family: Inter, sans-serif;
-                } */
-                p {
-                    text-align: justify;
-                }
-                hr {
-                    color: #444444;
-                    opacity: .25;
-                    margin-top: 5%;
-                    margin-bottom: 5%;
+                .card-container {
+                    width: 100%;
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #000000;
                 }
                 .card {
                     width: 100%;
@@ -52,14 +46,14 @@
 
                 .container-social-media {
                     margin-top: 0.1rem;
-                    margin-left: 25.5rem;
+                    margin-left: 24rem;
                     display: flex;
                     align-items: center;
                     flex-shrink: 0;
 
                     .icon {
-                        width: 35px; /* Adjusted icon size */
-                        height: 35px; /* Adjusted icon size */
+                        width: 40px; /* Adjusted icon size */
+                        height: 40px; /* Adjusted icon size */
                         padding: 6px;
                     }
                 }
@@ -136,7 +130,7 @@
                             color: #ffffff;
                             letter-spacing: -0.032rem;
                             align-items: baseline;
-                            font-weight: 400;
+                            font-weight: 150;
                             line-height: 1.5;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -144,9 +138,10 @@
                             .greeting-bold-name{
                                 font-size: 1.6rem;
                                 font-weight: 700;
-                                /* line-height: 700; */
+                                color: #ceae7b;
+                                /* line-height: 150; */
                                 letter-spacing: -0.032rem;
-                                color: #ffffff;
+                                /* color: #ffffff; */
                                 font-family: Inter, 'Source Sans Pro';
                             }
                         }
@@ -155,7 +150,7 @@
                             margin-bottom: 0;
                             max-width: 47.7rem;
                             font-size: 1.6rem;
-                            font-weight: 500;
+                            font-weight: 150;
                             line-height: 1.5;
                             letter-spacing: -0.032rem;
                             color: #ffffff;
@@ -166,7 +161,7 @@
                             margin-top: 0;
                             margin-bottom: 0;
                             font-size: 1.6rem;
-                            font-weight: 500;
+                            font-weight: 150;
                             line-height: 1.5;
                             letter-spacing: -0.032rem;
                             color: #ffffff;
@@ -181,7 +176,7 @@
                             flex-shrink: 0;
                             max-width: 47.6rem;
                             font-size: 1.6rem;
-                            font-weight: 500;
+                            font-weight: 150;
                             line-height: 1.5;
                             letter-spacing: -0.032rem;
                             color: #ffffff;
@@ -194,12 +189,13 @@
                         flex-shrink: 0;
                         max-width: 7.6rem;
                         font-size: 1.6rem;
-                        font-weight: 500;
+                        font-weight: 150;
                         line-height: 1.5;
                         letter-spacing: -0.032rem;
                     }
                 }
                 .footer {
+                margin-top: 1rem;
                 margin-right: 0.7063rem;
                 width: 50rem;
                 flex-shrink: 0;
@@ -223,6 +219,7 @@
                     flex-direction: column;
                     margin-top: 1.6rem;
                     margin-bottom: 1.6rem;
+                
 
                     .auto-group {
                     flex-shrink: 0;
@@ -232,173 +229,24 @@
                     display: flex;
                     flex-direction: column;
 
-                    .mechanics-title {
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        margin-bottom: 1.4rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        font-family: Inter, 'Source Sans Pro';
-                    }
-                    .mech1 {
-                        margin: 0rem 10.913rem 0.2rem 0rem;
-                        width: calc(100% - 10.9129rem);
-                        display: flex;
-                        align-items: center;
-                        flex-shrink: 0;
-
-                        .one {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        margin-right: 1.7808rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
+                        .mechanics-title {
+                            flex-shrink: 0;
+                            margin-bottom: 1.4rem;
+                            font-size: 1.6rem;
+                            font-weight: 150;
+                            line-height: 1.2125;
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
                         }
-                        .m1 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
+                        .mechanics-sentences {
+                            flex-shrink: 0;
+                            margin-bottom: 1.4rem;
+                            font-size: 1.6rem;
+                            font-weight: 150;
+                            line-height: 1.2125;
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
                         }
-                    }
-                    .mech2 {
-                        margin: 0rem 2.094rem 0.2rem 0rem;
-                        /* width: calc(100% - 2.0935rem); */
-                        width: calc(100% - 10.9129rem);
-                        display: flex;
-                        align-items: flex-start;
-                        flex-shrink: 0;
-
-                        .two {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        flex-shrink: 0;
-                        margin-right: 1.8002rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        }
-                        .m2 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        }
-                    }
-                    .mech3 {
-                        width: calc(100% - 5.8935rem);
-                        display: flex;
-                        align-items: flex-start;
-                        flex-shrink: 0;
-                        margin: 0rem 5.894rem 0.2rem 0rem;
-
-                        .three {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        margin-right: 1.8002rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        }
-                        .m3 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        font-family: Inter, 'Source Sans Pro';
-                        flex-shrink: 0;
-                        max-width: 44.5rem;
-                        }
-                    }
-                    .mech4 {
-                        flex-shrink: 0;
-                        margin-right: 0.3935rem;
-                        width: calc(100% - 0.3935rem);
-                        display: flex;
-                        align-items: flex-start;
-
-                        .four {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-right: 1.8002rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        }
-                        .m4 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-bottom: 0;
-                        margin-bottom: 0;
-                        color: #ffffff;
-                        font-family: Inter, 'Source Sans Pro';
-                        flex-shrink: 0;
-                        max-width: 50rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        }
-                    }
-                    }
-                    .mech5 {
-                    width: 100%;
-                    display: flex;
-                    align-items: flex-start;
-                    flex-shrink: 0;
-
-                    .five {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                        font-family: Inter, 'Source Sans Pro';
-                        white-space: nowrap;
-                        flex-shrink: 0;
-                        margin-right: 1.7937rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                    }
-                    .m5 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-family: Inter, 'Source Sans Pro';
-                        flex-shrink: 0;
-                        max-width: 50.5rem;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 1.2125;
-                        color: #ffffff;
-                    }
                     }
                 }
                 .contact-Rnk {
@@ -484,7 +332,7 @@
                     }
                     .copyright {
                     margin-top: 0;
-                    margin-bottom: 0;
+                    margin-bottom: 5rem;
                     color: #ffffff;
                     font-family: Inter, 'Source Sans Pro';
                     white-space: nowrap;
@@ -495,88 +343,26 @@
                     }
                 }
                 }
-                .txt{
+                .last-footer {
+                    /* background-color: #f5f5f5; */
+                    padding: 10px ;
+                }
+                .ftr{
                     text-align: center;
-                    margin-top: -10px;
-                }
-                .title {
-                    background-color: #4a1564;
-                    color: #ffffff;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center; 
-                    padding: 1%;
-                    margin-top: 5%;
-                }
-                .info {
-                    border: 0.5px solid #4a1564;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center; 
-                    color:#AB8000;
+                    color: #f5f5f5;
+                    font-size: 1.1rem;
+                    font-family: Inter, 'Source Sans Pro';
                 }
                 .link{
                     color: #AB8000;
                     text-decoration: underline;
                     font-weight: bold;
                 }
-                .contxt{
-                    text-align: left;
-                    margin-top: 20px;
-                    font-size: small;
-                }
-                .last-footer {
-                    background-color: #f5f5f5;
-                    padding: 15px ;
-                }
-                .ftr{
-                    text-align: center;
-                    color: #888888;
-                    font-size: 12px;
-                    font-style: italic;
-                }
-                .info-container{
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 5px;
-                    padding: 0;
-                    margin: 0;
-                    text-align: center;
-                }
-                .badge{
-                    width: 120px;
-                    height: auto;
-                }
-                .badge-wrapper {
-                    margin: 15px 10px;
-                }
-                .msg{
-                    text-align: left;
-                    font-size: small;
-                    /* color:#444444; */
-                    color:#888888;
-                    margin-top: 6px;
-                }
-                h3 {
-                    font-size: 22px;
-                }
-                a{
-                    text-decoration: none;
-                }
-                /* .p{
-                    text-align: left;
-                    font-size: small;
-                    color:#f5f5f5;
-                    margin-top: 40px;
-                } */
                 
                 @media screen and (max-width: 600px) {
                     .card {
                         width: 100%;
                     }
-                    /* .img img {
-                        max-width: 100%;
-                    } */
                     .bg{
                     max-width: 100%;
                     max-height: 500px; 
@@ -590,10 +376,16 @@
                         width: 25px;
                         height: 25px;
                     }
+                    .mechanics-sentences {
+                        padding-left: 10px;
+                    }
+                    .card-promo-paragraph{
+                        padding-left: 10px;
+                    }
                 }
             </style>
         </head>
-        <body>
+        <body class="card-container">
             <div class="card">
                 <div class="header">
                     <img class="image-xure" src="./assets/xure-logo.png"/>
@@ -641,35 +433,24 @@
                   <p class="company-name">Xure</p>
                   <div class="mechanics">
                     <div class="auto-group">
-                      <p class="mechanics-title">Mechanics:</p>
-                      <div class="mech1">
-                        <p class="one">1.</p>
-                        <p class="m1">Winners will be selected through an electronic raffle.</p>
-                      </div>
-                      <div class="mech2">
-                        <p class="two">2.</p>
-                        <p class="m2">Winners will be notified on [DATE] via email that is registered on their Xure Account.</p>
-                      </div>
-                      <div class="mech3">
-                        <p class="three">3.</p>
-                        <p class="m3">Winners can claim their prizes at the Aftermarket branch in Greenhills, San Juan.</p>
-                      </div>
-                      <div class="mech4">
-                        <p class="four">4.</p>
-                        <p class="m4">Participants are encouraged to read and understand the complete terms and conditions of the &#34;         &#34; available at [link to full terms and conditions].</p>
-                      </div>
-                      <div class="mech5">
-                        <p class="five">5.</p>
-                        <p class="m5">Failure to meet one of these qualifications will not be eligible to be part of the raffle.</p>
-                      </div>
+                      <p class="mechanics-title">Mechanics:
+                        <ol class="mechanics-sentences">
+                            <li>Winners will be selected through an electronic raffle.</li>
+                            <li>Winners will be notified on [DATE] via email that is registered on their Xure Account.</li>
+                            <li>Winners can claim their prizes at the Aftermarket branch in Greenhills, San Juan.</li>
+                            <li>Participants are encouraged to read and understand the complete terms and conditions of the &#34;         &#34; available at [link to full terms and conditions].</li>
+                            <li>Failure to meet one of these qualifications will not be eligible to be part of the raffle.</li>
+                        </ol>
+                      </p>
                     </div>
                   </div>
-                  <p class="contact-Rnk">
-                    <span class="contact-Rnk-sub-0">If you have any questions or concerns, we&#39;re here to help. Contact us at </span>
-                    <span class="contact-Rnk-sub-1">support@xuredeal.com</span>
-                    <span class="contact-Rnk-sub-2">.</span>
-                  </p>
                   <div class="auto-group-complete-address">
+                    <p class="contact-Rnk">
+                      <span class="contact-Rnk-sub-0">If you have any questions or concerns, we&#39;re here to help. Contact us at </span>
+                      <span class="contact-Rnk-sub-1">support@xuredeal.com</span>
+                      <span class="contact-Rnk-sub-2">.</span>
+                    </p>
+
                     <div class="complete-address">
                       <p class="legal-name">XURE DEAL PTE. LTD.</p>
                       <p class="address">39/F Marina Bay Financial Center Tower 2</p>
@@ -677,9 +458,9 @@
                     </div>
                     <p class="copyright">©2023 All rights reserved.</p>
                   </div>
-                </div>
-                <div class="last-footer">
-                    <div class="ftr"> This is a post-only mailing. Please do not reply to this email. </div>
+                  <div class="last-footer">
+                      <div class="ftr"> This is a post-only mailing. Please do not reply to this email. </div>
+                  </div>
                 </div>
             </div>
         </body>
