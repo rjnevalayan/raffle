@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700"/>
         <head>
             <style>
+                body{
+                    overflow-x: hidden;
+                }
                 .card-container {
                     width: 100%;
                     position: relative;
@@ -85,6 +88,13 @@
                     width: 50rem;
                     height: auto;
                     background-color: #202226;
+                }
+                .card-promo-paragraph-0{
+                    flex-shrink: 0;
+                    box-sizing: border-box;
+                    width: 50rem;
+                    height: auto;
+                    background-color: #000000;
                 }
                 .card-paragraph{
                     width: 100%;
@@ -197,7 +207,7 @@
                 .footer {
                 margin-top: 1rem;
                 margin-right: 0.7063rem;
-                width: 50rem;
+                width: 49rem;
                 flex-shrink: 0;
                 align-items: center;
 
@@ -212,43 +222,34 @@
                     font-family: Inter, 'Source Sans Pro';
                     white-space: nowrap;
                 }
-                .mechanics {
+                /* .mechanics {
                     width: 100%;
                     align-items: center;
                     display: flex;
                     flex-direction: column;
                     margin-top: 1.6rem;
                     margin-bottom: 1.6rem;
-                
+                }
 
-                    .auto-group {
+                .mechanics-auto-group {
                     flex-shrink: 0;
                     box-sizing: border-box;
                     padding-bottom: 0.1rem;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-
-                        .mechanics-title {
-                            flex-shrink: 0;
-                            margin-bottom: 1.4rem;
-                            font-size: 1.6rem;
-                            font-weight: 150;
-                            line-height: 1.2125;
-                            color: #ffffff;
-                            font-family: Inter, 'Source Sans Pro';
-                        }
-                        .mechanics-sentences {
-                            flex-shrink: 0;
-                            margin-bottom: 1.4rem;
-                            font-size: 1.6rem;
-                            font-weight: 150;
-                            line-height: 1.2125;
-                            color: #ffffff;
-                            font-family: Inter, 'Source Sans Pro';
-                        }
-                    }
                 }
+
+                .mechanics-title,
+                .mechanics-sentences {
+                    flex-shrink: 0;
+                    margin-bottom: 1.4rem;
+                    font-size: 1.6rem;
+                    font-weight: 150;
+                    line-height: 1.2125;
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                } */
                 .contact-Rnk {
                     line-height: 1.5;
                     letter-spacing: -0.032rem;
@@ -302,7 +303,7 @@
                         margin-bottom: 0;
                         white-space: nowrap;
                         flex-shrink: 0;
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                         font-weight: 400;
                         line-height: 1.4285714286;
                         color: #ffffff;
@@ -312,7 +313,7 @@
                         margin-top: 0;
                         margin-bottom: 0;
                         flex-shrink: 0;
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                         font-weight: 400;
                         line-height: 1.4285714286;
                         color: #ffffff;
@@ -321,7 +322,7 @@
                     }
                     .city-state-zip-code {
                         margin-top: 0;
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                         font-weight: 400;
                         line-height: 1.4285714286;
                         color: #ffffff;
@@ -337,7 +338,7 @@
                     font-family: Inter, 'Source Sans Pro';
                     white-space: nowrap;
                     flex-shrink: 0;
-                    font-size: 1.4rem;
+                    font-size: 1.6rem;
                     font-weight: 400;
                     line-height: 1.4285714286;
                     }
@@ -376,9 +377,6 @@
                         width: 25px;
                         height: 25px;
                     }
-                    .mechanics-sentences {
-                        padding-left: 10px;
-                    }
                     .card-promo-paragraph{
                         padding-left: 10px;
                     }
@@ -388,18 +386,28 @@
         <body class="card-container">
             <div class="card">
                 <div class="header">
-                    <img class="image-xure" src="./assets/xure-logo.png"/>
+                    <img class="image-xure" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-19-511.png?alt=media&token=9254d5ea-d365-4bbd-adde-b3eaa4f90a3c"/>
                     <div class="container-social-media">
-                        <img class="icon" src="./assets/x.png"/>
-                        <img class="icon" src="./assets/yt.png"/>
-                        <img class="icon" src="./assets/tiktok.png"/>
-                        <img class="icon" src="./assets/fb.png"/>
-                        <img class="icon" src="./assets/ig.png"/>
+                        <a href="https://twitter.com/xureofficial" target="_blank">
+                            <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-18-166.png?alt=media&token=2d86d7a3-356a-4051-9a90-4e27ea45f418"/>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-20-013.png?alt=media&token=4ccec6ca-ba78-4b31-af7e-0cb930a94871"/>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-17-735.png?alt=media&token=4b4c880e-59b8-4f17-9d4c-afb3e60e679c"/>
+                        </a>
+                        <a href="https://www.facebook.com/xureofficial" target="_blank">
+                            <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-20-569.png?alt=media&token=a635ccf3-869a-4f44-9443-d799933c3f26"/>
+                        </a>
+                        <a href="https://www.instagram.com/xureofficial/" target="_blank">
+                            <img class="icon" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-09-691.png?alt=media&token=16a5e1db-cc6a-4f9c-9b5c-e3ab67e4d8a3"/>
+                        </a>
                     </div>
                 </div>
                 <div class="body">
                     <div class="image-container">
-                        <img class="responsive-image" src="./assets/pexels-photo-by-kaboompics-com-bg.png"/>
+                        <img class="responsive-image" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fbanner_1.png?alt=media&token=5f2318a8-f8fd-4bc3-ae72-b812f6a69744"/>
                     </div>
                     <div class="card-promo-paragraph">
                       <div class="card-paragraph">
@@ -431,23 +439,24 @@
                 </div>
                 <div class="footer">
                   <p class="company-name">Xure</p>
-                  <div class="mechanics">
-                    <div class="auto-group">
-                      <p class="mechanics-title">Mechanics:
+                  <div class="card-promo-paragraph-0">
+                    <div class="card-paragraph">
+                      <div class="content-paragraph">
+                        <p class="first-sentence">Mechanics:</p>
                         <ol class="mechanics-sentences">
-                            <li>Winners will be selected through an electronic raffle.</li>
-                            <li>Winners will be notified on [DATE] via email that is registered on their Xure Account.</li>
-                            <li>Winners can claim their prizes at the Aftermarket branch in Greenhills, San Juan.</li>
-                            <li>Participants are encouraged to read and understand the complete terms and conditions of the &#34;         &#34; available at [link to full terms and conditions].</li>
-                            <li>Failure to meet one of these qualifications will not be eligible to be part of the raffle.</li>
+                            <li class="first-sentence">Winners will be selected through an electronic raffle.</li>
+                            <li class="first-sentence">Winners will be notified on [DATE] via email that is registered on their Xure Account.</li>
+                            <li class="first-sentence">Winners can claim their prizes at the Aftermarket branch in Greenhills, San Juan.</li>
+                            <li class="first-sentence">Participants are encouraged to read and understand the complete terms and conditions of the &#34;         &#34; available at [link to full terms and conditions].</li>
+                            <li class="first-sentence">Failure to meet one of these qualifications will not be eligible to be part of the raffle.</li>
                         </ol>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div class="auto-group-complete-address">
                     <p class="contact-Rnk">
                       <span class="contact-Rnk-sub-0">If you have any questions or concerns, we&#39;re here to help. Contact us at </span>
-                      <span class="contact-Rnk-sub-1">support@xuredeal.com</span>
+                      <span class="contact-Rnk-sub-1"><a href="mailto:support@xuredeal.com" style="color: #ceae7b">support@xuredeal.com</a></span>
                       <span class="contact-Rnk-sub-2">.</span>
                     </p>
 
