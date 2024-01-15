@@ -10,27 +10,27 @@
                 margin: 0;
                 padding: 20px;
                 font-family: Inter, sans-serif;
-                background-color: #000000;
+                background-color: #F2F5F9;
             }
             p {
-                color: #eeeeee;
+                color: #0d0d0d;
                 font-size: 25.6px; 
             }
             hr {
-                color: #eeeeee;
+                color: #0d0d0d;
                 opacity: .25;
                 margin-top: 5%;
                 margin-bottom: 5%;
             }
             ol li {
-                color: #eeeeee;
+                color: #0d0d0d;
                 font-size: 25.6px;
                 line-height: 2.5rem;
             }
             .card {
                 max-width: 900px;
                 margin: 0 auto;
-                background-color: #000000;
+                background-color: #F2F5F9;
                 box-sizing: border-box;
                 margin-top: 5%;
                 margin-bottom: 5%;
@@ -47,7 +47,7 @@
             } */
             .header {
                 margin-top: 0;
-                background-color: #0d0d0d;
+                background-color: #F2F5F9;
                 padding: 10px;
                 display: flex;
                 justify-content: center;
@@ -62,7 +62,7 @@
                 font-family: Inter, 'Source Sans Pro';
                 font-size: 38.4px; /* Convert rem to px */
                 font-weight: 600;
-                color:#ffffff;
+                color:#0d0d0d;
             }
             .info {
                 border: 0.5px solid #4a1564;
@@ -84,12 +84,19 @@
                 margin: 3% 5% 3% 5%;
             }
             .footer {
-                background-color: #000000;
+                background-color: #F2F5F9;
                 margin: 3% 5% 3% 5%;
             }
             .ftr{
                 text-align: left;
-                color: #efefef;
+                color: #0d0d0d;
+                font-size: 25.6px;
+            }
+            .post-mailing{
+                text-align: left;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: #0d0d0d;
                 font-size: 25.6px;
             }
             .info-container{
@@ -143,6 +150,12 @@
                 height: 40px; 
                 width:auto;
             }
+            .xure-memo {
+                color: #CEAE7B; 
+                font-weight: 700; 
+                font-size: 25.6pxpx;
+            }
+
             
             @media only screen and (min-width: 600px) {
                 .card {
@@ -189,6 +202,22 @@
                 ol {
                     padding-inline-start: 20px !important;
                 }
+                .ftr{
+                    text-align: left;
+                    color: #0d0d0d;
+                    font-size: 10px;
+                }
+                .post-mailing{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    color: #0d0d0d;
+                }
+                .xure-memo {
+                    color: #CEAE7B; 
+                    font-weight: 700; 
+                    font-size: 16px;
+                }
             }
         </style>
     </head>
@@ -198,11 +227,11 @@
                 <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/XURE%2Fviber_image_2024-01-11_10-11-19-511.png?alt=media&token=9254d5ea-d365-4bbd-adde-b3eaa4f90a3c" alt="Logo">
             </div>
             <div class="body">
-                <div style="background-color: #202226; border-radius: 10px;">
+                <div style="background-color: #ffffff; border-radius: 10px;">
                     <img class="responsive-image" src="https://firebasestorage.googleapis.com/v0/b/xure-9f8a6.appspot.com/o/banner_1.png?alt=media&token=856ef259-dfbb-4dfc-9eb7-d136f043980d" />
                     <div class="paragraph">
                         <label class="title">
-                            You have earned a raffle entry to (NAME OF
+                            You have earned a [Number] raffle entry/entries to (NAME OF
                             CAMPAIGN) !
                         </label>
                         <p class="greeting">
@@ -226,7 +255,7 @@
                     </div>
                 </div>
                 <br>
-                <p style="color: #CEAE7B; font-weight: 700; font-size: 16px;">
+                <p class="xure-memo">
                    Xure
                 </p>
                 <p>
@@ -280,13 +309,14 @@
                         <br>
                         Marina Blvd., Singapore 018983
                     </p>
+                    <p class="address">
+                        © 2023 All Rights Reserved.
+                        <br><br><br>
+                        This is a post-only mailing. Please do not reply to this email.
+                    </p>
+                    <div class="ftr"><br>
+                    </div>
                 </div>
-            </div>
-            <div class="footer">
-                <div class="ftr">© 2023 All Rights Reserved.</div>
-                <p>
-                    This is a post-only mailing. Please do not reply to this email.
-                </p>
             </div>
         </div>
     </body>
