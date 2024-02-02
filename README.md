@@ -1,4 +1,3 @@
-# raffle
 <!DOCTYPE html>
 <html>
     <title> You have earned a raffle entry to (NAME OF CAMPAIGN)! </title>
